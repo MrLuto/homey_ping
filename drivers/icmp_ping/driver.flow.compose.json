@@ -2,6 +2,7 @@
   "triggers": [
     {
       "id": "became-online",
+      "icon": "/assets/icon.svg",
       "title": {
         "en": "Device came online",
         "nl": "Apparaat kwam online"
@@ -9,6 +10,7 @@
     },
     {
       "id": "became-offline",
+      "icon": "/assets/icon.svg",
       "title": {
         "en": "Device went offline",
         "nl": "Apparaat ging offline"
@@ -18,6 +20,7 @@
   "conditions": [
     {
       "id": "is-online",
+      "icon": "/assets/icon.svg",
       "title": {
         "en": "Is online",
         "nl": "Is online"
@@ -25,6 +28,7 @@
     },
     {
       "id": "is-offline",
+      "icon": "/assets/icon.svg",
       "title": {
         "en": "Is offline",
         "nl": "Is offline"
@@ -34,6 +38,7 @@
   "actions": [
     {
       "id": "ping-now",
+      "icon": "/assets/icon.svg",
       "title": {
         "en": "Ping now",
         "nl": "Ping nu"
