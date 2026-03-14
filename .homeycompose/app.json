@@ -1,0 +1,32 @@
+{
+  "id": "com.mrluto.homey_ping",
+  "version": "1.0.0",
+  "compatibility": ">=12.4.0",
+  "sdk": 3,
+  "runtime": "nodejs",
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Homey Ping",
+    "nl": "Homey Ping"
+  },
+  "description": {
+    "en": "Monitor devices and use online/offline status in Homey Flows (ICMP with optional TCP fallback).",
+    "nl": "Monitor apparaten en gebruik online/offline status in Homey Flows (ICMP met optionele TCP fallback)."
+  },
+  "category": [
+    "tools"
+  ],
+  "brandColor": "#1C6E8C",
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Micha Mudde",
+    "email": "micha@byluto.nl"
+  }
+}

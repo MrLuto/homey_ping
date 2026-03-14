@@ -1,0 +1,141 @@
+{
+  "name": {
+    "en": "Ping Device",
+    "nl": "Ping apparaat"
+  },
+  "class": "sensor",
+  "capabilities": [
+    "onoff",
+    "ping_status"
+  ],
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "lan"
+  ],
+  "pair": [
+    {
+      "id": "manual_add"
+    }
+  ],
+  "settings": [
+    {
+      "id": "host",
+      "type": "text",
+      "label": {
+        "en": "Host or IP",
+        "nl": "Host of IP"
+      },
+      "hint": {
+        "en": "For example: 192.168.1.10 or nas.local",
+        "nl": "Bijvoorbeeld: 192.168.1.10 of nas.local"
+      },
+      "value": "8.8.8.8"
+    },
+    {
+      "id": "interval",
+      "type": "number",
+      "label": {
+        "en": "Ping interval (seconds)",
+        "nl": "Ping-interval (seconden)"
+      },
+      "hint": {
+        "en": "How often the device is pinged.",
+        "nl": "Hoe vaak het apparaat wordt gepingd."
+      },
+      "value": 30,
+      "attr": {
+        "min": 5,
+        "max": 3600,
+        "step": 1
+      }
+    },
+    {
+      "id": "timeout",
+      "type": "number",
+      "label": {
+        "en": "Ping timeout (ms)",
+        "nl": "Ping-timeout (ms)"
+      },
+      "hint": {
+        "en": "Maximum wait time per ping.",
+        "nl": "Maximale wachttijd per ping."
+      },
+      "value": 2000,
+      "attr": {
+        "min": 500,
+        "max": 10000,
+        "step": 100
+      }
+    },
+    {
+      "id": "probe_mode",
+      "type": "dropdown",
+      "label": {
+        "en": "Probe mode",
+        "nl": "Controlemodus"
+      },
+      "hint": {
+        "en": "AUTO tries ICMP first and falls back to TCP when ICMP is unavailable.",
+        "nl": "AUTO probeert eerst ICMP en valt terug op TCP als ICMP niet beschikbaar is."
+      },
+      "value": "auto",
+      "values": [
+        {
+          "id": "auto",
+          "label": {
+            "en": "Auto (ICMP -> TCP)",
+            "nl": "Auto (ICMP -> TCP)"
+          }
+        },
+        {
+          "id": "icmp",
+          "label": {
+            "en": "ICMP only",
+            "nl": "Alleen ICMP"
+          }
+        },
+        {
+          "id": "tcp",
+          "label": {
+            "en": "TCP only",
+            "nl": "Alleen TCP"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tcp_port",
+      "type": "number",
+      "label": {
+        "en": "TCP fallback port",
+        "nl": "TCP fallback-poort"
+      },
+      "hint": {
+        "en": "Used for TCP mode and AUTO fallback. Example: 443, 80, 22",
+        "nl": "Gebruikt voor TCP-modus en AUTO fallback. Bijvoorbeeld: 443, 80, 22"
+      },
+      "value": 443,
+      "attr": {
+        "min": 1,
+        "max": 65535,
+        "step": 1
+      }
+    }
+  ],
+  "capabilitiesOptions": {
+    "onoff": {
+      "setable": true,
+      "title": {
+        "en": "Ping now",
+        "nl": "Ping nu"
+      }
+    }
+  },
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.png"
+  }
+}

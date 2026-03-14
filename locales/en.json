@@ -1,0 +1,29 @@
+{
+  "drivers": {
+    "icmp_ping": {
+      "default_name": "Ping device"
+    }
+  },
+  "errors": {
+    "no_host": "No host configured",
+    "ping_failed": "Ping command failed",
+    "no_reply": "No ICMP reply received",
+    "unknown_error": "Unknown error"
+  },
+  "pair": {
+    "errors": {
+      "host_required": "Please enter a host or IP address.",
+      "host_invalid": "Host is invalid. Use only a hostname or IP address."
+    },
+    "manual_add": {
+      "title": "Add ping target",
+      "name_label": "Device name (optional)",
+      "name_placeholder": "Ping NAS",
+      "host_label": "Host or IP",
+      "host_placeholder": "192.168.1.10 or nas.local",
+      "interval_label": "Ping interval (seconds)",
+      "timeout_label": "Ping timeout (ms)",
+      "submit": "Add device"
+    }
+  }
+}

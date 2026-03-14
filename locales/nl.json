@@ -1,0 +1,29 @@
+{
+  "drivers": {
+    "icmp_ping": {
+      "default_name": "Ping apparaat"
+    }
+  },
+  "errors": {
+    "no_host": "Geen host ingesteld",
+    "ping_failed": "Ping-opdracht mislukt",
+    "no_reply": "Geen ICMP-antwoord ontvangen",
+    "unknown_error": "Onbekende fout"
+  },
+  "pair": {
+    "errors": {
+      "host_required": "Vul een host of IP-adres in.",
+      "host_invalid": "Host is ongeldig. Gebruik alleen een hostnaam of IP-adres."
+    },
+    "manual_add": {
+      "title": "Pingdoel toevoegen",
+      "name_label": "Apparaatnaam (optioneel)",
+      "name_placeholder": "Ping NAS",
+      "host_label": "Host of IP",
+      "host_placeholder": "192.168.1.10 of nas.local",
+      "interval_label": "Ping-interval (seconden)",
+      "timeout_label": "Ping-timeout (ms)",
+      "submit": "Apparaat toevoegen"
+    }
+  }
+}

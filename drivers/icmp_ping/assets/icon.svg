@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="38%" r="70%">
+      <stop offset="0%" stop-color="#24344C"/>
+      <stop offset="100%" stop-color="#0B111D"/>
+    </radialGradient>
+    <radialGradient id="orb" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#FFD66B"/>
+      <stop offset="55%" stop-color="#FF7A45"/>
+      <stop offset="100%" stop-color="#E73E39"/>
+    </radialGradient>
+    <linearGradient id="ping" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A3F7FF"/>
+      <stop offset="100%" stop-color="#36C5F3"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="256" cy="256" r="244" fill="url(#bg)"/>
+
+  <circle cx="256" cy="256" r="182" fill="none" stroke="url(#ping)" stroke-width="18" stroke-opacity="0.18"/>
+  <circle cx="256" cy="256" r="144" fill="none" stroke="url(#ping)" stroke-width="14" stroke-opacity="0.3"/>
+  <circle cx="256" cy="256" r="110" fill="none" stroke="url(#ping)" stroke-width="10" stroke-opacity="0.5"/>
+
+  <circle cx="256" cy="256" r="92" fill="url(#orb)"/>
+
+  <circle cx="220" cy="228" r="16" fill="#FFFFFF"/>
+  <circle cx="292" cy="228" r="16" fill="#FFFFFF"/>
+  <circle cx="256" cy="290" r="14" fill="#FFFFFF"/>
+
+  <circle cx="374" cy="132" r="16" fill="url(#ping)"/>
+  <circle cx="120" cy="380" r="12" fill="url(#ping)" fill-opacity="0.8"/>
+</svg>

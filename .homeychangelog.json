@@ -1,0 +1,6 @@
+{
+  "1.0.0": {
+    "en": "Initial release with manual target pairing, online/offline status capability, periodic probes, flow cards, and ICMP/TCP probe modes.",
+    "nl": "Eerste release met handmatig toevoegen van doelen, online/offline status-capability, periodieke controles, flow-kaarten en ICMP/TCP controlemodi."
+  }
+}

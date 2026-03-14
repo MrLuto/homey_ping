@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <form id="add-form" class="homey-form">
+    <fieldset class="homey-form-fieldset">
+      <legend class="homey-form-legend" data-i18n="pair.manual_add.title"></legend>
+
+      <div class="homey-form-group">
+        <label class="homey-form-label" for="device-name" data-i18n="pair.manual_add.name_label"></label>
+        <input id="device-name" class="homey-form-input-text" type="text" />
+      </div>
+
+      <div class="homey-form-group">
+        <label class="homey-form-label" for="device-host" data-i18n="pair.manual_add.host_label"></label>
+        <input id="device-host" class="homey-form-input-text" type="text" required />
+      </div>
+
+      <div class="homey-form-group">
+        <label class="homey-form-label" for="device-interval" data-i18n="pair.manual_add.interval_label"></label>
+        <input id="device-interval" class="homey-form-input-number" type="number" min="5" max="3600" step="1" value="30" />
+      </div>
+
+      <div class="homey-form-group">
+        <label class="homey-form-label" for="device-timeout" data-i18n="pair.manual_add.timeout_label"></label>
+        <input id="device-timeout" class="homey-form-input-number" type="number" min="500" max="10000" step="100" value="2000" />
+      </div>
+    </fieldset>
+
+    <button type="submit" class="homey-button-primary-full" data-i18n="pair.manual_add.submit"></button>
+  </form>
+
+  <script type="text/javascript">
+    function clampNumber(value, fallback, min, max) {
+      const parsed = Number(value);
+      if (!Number.isFinite(parsed)) return fallback;
+      return Math.min(max, Math.max(min, parsed));
+    }
+
+    function makeDeviceId(host) {
+      const normalized = host
+        .toLowerCase()
+        .replace(/[^a-z0-9]/g, '-')
+        .replace(/-+/g, '-')
+        .replace(/^-|-$/g, '');
+      return 'icmp-' + (normalized || String(Date.now()));
+    }
+
+    function initPair(Homey) {
+      if (window.__pairInitDone) return;
+      window.__pairInitDone = true;
+
+      const form = document.getElementById('add-form');
+      const nameInput = document.getElementById('device-name');
+      const hostInput = document.getElementById('device-host');
+      const intervalInput = document.getElementById('device-interval');
+      const timeoutInput = document.getElementById('device-timeout');
+
+      hostInput.placeholder = Homey.__('pair.manual_add.host_placeholder');
+      nameInput.placeholder = Homey.__('pair.manual_add.name_placeholder');
+
+      form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const host = String(hostInput.value || '').trim();
+        if (!host) {
+          Homey.alert(Homey.__('pair.errors.host_required'), 'error');
+          return;
+        }
+
+        if (/\s/.test(host) || host.indexOf('/') !== -1) {
+          Homey.alert(Homey.__('pair.errors.host_invalid'), 'error');
+          return;
+        }
+
+        if (typeof Homey.showLoadingOverlay === 'function') {
+          Homey.showLoadingOverlay();
+        }
+
+        const defaultName = Homey.__('drivers.icmp_ping.default_name');
+        const customName = String(nameInput.value || '').trim();
+        const name = customName || (defaultName + ' (' + host + ')');
+
+        const device = {
+          name: name,
+          data: {
+            id: makeDeviceId(host),
+          },
+          settings: {
+            host: host,
+            interval: clampNumber(intervalInput.value, 30, 5, 3600),
+            timeout: clampNumber(timeoutInput.value, 2000, 500, 10000),
+            probe_mode: 'auto',
+            tcp_port: 443,
+          },
+        };
+
+        Homey.createDevice(device)
+          .then(function() {
+            return Homey.done();
+          })
+          .catch(function(error) {
+            const message = error && error.message ? error.message : String(error);
+            return Homey.alert(message, 'error');
+          })
+          .finally(function() {
+            if (typeof Homey.hideLoadingOverlay === 'function') {
+              Homey.hideLoadingOverlay();
+            }
+          });
+      });
+    }
+
+    if (typeof Homey !== 'undefined') {
+      initPair(Homey);
+    }
+
+    function onHomeyReady(Homey) {
+      initPair(Homey);
+    }
+  </script>
+</body>
+</html>

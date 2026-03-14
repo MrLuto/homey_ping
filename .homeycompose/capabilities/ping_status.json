@@ -1,0 +1,26 @@
+{
+  "type": "enum",
+  "title": {
+    "en": "Status",
+    "nl": "Status"
+  },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "values": [
+    {
+      "id": "online",
+      "title": {
+        "en": "Online",
+        "nl": "Online"
+      }
+    },
+    {
+      "id": "offline",
+      "title": {
+        "en": "Offline",
+        "nl": "Offline"
+      }
+    }
+  ]
+}

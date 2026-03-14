@@ -1,0 +1,43 @@
+{
+  "triggers": [
+    {
+      "id": "became-online",
+      "title": {
+        "en": "Device came online",
+        "nl": "Apparaat kwam online"
+      }
+    },
+    {
+      "id": "became-offline",
+      "title": {
+        "en": "Device went offline",
+        "nl": "Apparaat ging offline"
+      }
+    }
+  ],
+  "conditions": [
+    {
+      "id": "is-online",
+      "title": {
+        "en": "Is online",
+        "nl": "Is online"
+      }
+    },
+    {
+      "id": "is-offline",
+      "title": {
+        "en": "Is offline",
+        "nl": "Is offline"
+      }
+    }
+  ],
+  "actions": [
+    {
+      "id": "ping-now",
+      "title": {
+        "en": "Ping now",
+        "nl": "Ping nu"
+      }
+    }
+  ]
+}
