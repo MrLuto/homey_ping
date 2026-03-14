@@ -1,11 +1,18 @@
 name: Publish Homey App
 on:
+  push:
+    tags:
+      - "v*"
   workflow_dispatch:
 
 jobs:
   main:
     name: Publish Homey App
+    if: ${{ secrets.HOMEY_PAT != '' }}
     runs-on: ubuntu-latest
+    concurrency:
+      group: homey-publish-${{ github.ref }}
+      cancel-in-progress: false
     steps:
       - uses: actions/checkout@v4
 

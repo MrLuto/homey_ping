@@ -86,6 +86,11 @@ Required repository secret:
 
 - `HOMEY_PAT`  
   Create it at: https://tools.developer.homey.app/me
+
+Publish automation:
+
+- Pushing a tag like `v1.0.1` triggers `.github/workflows/homey-app-publish.yml` automatically.
+- You can also run publish manually via `workflow_dispatch`.
   
 ## Notes About ICMP
 
