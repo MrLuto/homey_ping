@@ -15,6 +15,10 @@
     "en": "Monitor devices and use online/offline status in Homey Flows (ICMP with optional TCP fallback).",
     "nl": "Monitor apparaten en gebruik online/offline status in Homey Flows (ICMP met optionele TCP fallback)."
   },
+  "changelog": {
+    "en": "Unified app/device/flow icons and improved GitHub autopublish workflow.",
+    "nl": "Eenduidige app/apparaat/flow-iconen en verbeterde GitHub autopublish-workflow."
+  },
   "category": [
     "tools"
   ],
