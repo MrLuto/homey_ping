@@ -1,6 +1,6 @@
 {
   "name": "com.byluto.homey_ping",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "main": "app.js",
   "license": "PolyForm-Noncommercial-1.0.0",
   "scripts": {
