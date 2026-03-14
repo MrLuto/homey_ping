@@ -4,16 +4,31 @@ on:
     tags:
       - "v*"
   workflow_dispatch:
+  workflow_run:
+    workflows:
+      - Update Homey App Version
+    types:
+      - completed
 
 jobs:
   main:
     name: Publish Homey App
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     concurrency:
       group: homey-publish-${{ github.ref }}
       cancel-in-progress: false
     steps:
       - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event_name == 'workflow_run' && github.event.workflow_run.head_sha || github.ref }}
+
+      - name: Check HOMEY_PAT
+        run: |
+          if [ -z "${{ secrets.HOMEY_PAT }}" ]; then
+            echo "Secret HOMEY_PAT ontbreekt."
+            exit 1
+          fi
 
       - name: Publish Homey App
         uses: athombv/github-action-homey-app-publish@master
