@@ -6,5 +6,9 @@
   "1.0.1": {
     "en": "Stability improvements, icon update, and automated GitHub publish support.",
     "nl": "Stabiliteitsverbeteringen, icoon-update en automatische GitHub publish ondersteuning."
+  },
+  "1.0.3": {
+    "en": "Unified app/device/flow icons, improved autopublish workflow, and release pipeline fixes.",
+    "nl": "Eenduidige app/apparaat/flow-iconen, verbeterde autopublish-workflow en fixes in de release-pipeline."
   }
 }
