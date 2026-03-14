@@ -86,21 +86,7 @@ Required repository secret:
 
 - `HOMEY_PAT`  
   Create it at: https://tools.developer.homey.app/me
-
-## Publish Checklist (Homey App Store)
-
-1. Validate locally:
-   - `npm run lint`
-   - `npm run validate`
-2. Update version and changelog:
-   - `homey app version patch` (or minor/major)
-3. Ensure metadata is correct:
-   - `.homeycompose/app.json` (name, description, author, images, brandColor)
-4. Push to GitHub.
-5. Optionally run version/publish workflows.
-6. Publish:
-   - `homey app publish`
-
+  
 ## Notes About ICMP
 
 - If Homey runtime has no `ping` binary, ICMP-only mode cannot work.
@@ -109,4 +95,5 @@ Required repository secret:
 
 ## License
 
-GPL-3.0 (see [`LICENSE`](./LICENSE)).
+PolyForm Noncommercial 1.0.0 (see [`LICENSE`](./LICENSE)).
+Commercial use is not permitted under this license.

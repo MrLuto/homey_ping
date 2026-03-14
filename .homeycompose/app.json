@@ -1,5 +1,5 @@
 {
-  "id": "com.mrluto.homey_ping",
+  "id": "com.byluto.homey_ping",
   "version": "1.0.0",
   "compatibility": ">=12.4.0",
   "sdk": 3,
@@ -26,7 +26,7 @@
     "xlarge": "/assets/images/xlarge.png"
   },
   "author": {
-    "name": "Micha Mudde",
-    "email": "micha@byluto.nl"
+    "name": "ByLuto",
+    "email": "development@byluto.nl"
   }
 }

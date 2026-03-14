@@ -1,7 +1,8 @@
 {
-  "name": "com.mrluto.homey_ping",
+  "name": "com.byluto.homey_ping",
   "version": "1.0.0",
   "main": "app.js",
+  "license": "PolyForm-Noncommercial-1.0.0",
   "scripts": {
     "lint": "eslint --ext .js,.ts --ignore-path .gitignore .",
     "validate": "homey app validate",
