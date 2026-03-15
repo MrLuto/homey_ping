@@ -22,5 +22,9 @@
   "1.0.6": {
     "en": "Improved App Store copy with clearer English and Dutch descriptions and feature overview.",
     "nl": "App Store-tekst verbeterd met duidelijkere Engelse en Nederlandse beschrijvingen en functie-overzicht."
+  },
+  "1.0.7": {
+    "en": "Added dedicated Flow card icons so Flow icons are shown correctly in the App Store.",
+    "nl": "Aparte Flow-kaarticonen toegevoegd zodat Flow-iconen correct zichtbaar zijn in de App Store."
   }
 }
