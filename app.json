@@ -13,8 +13,8 @@
     "nl": "Homey Ping"
   },
   "description": {
-    "en": "Monitor devices and use online/offline status in Homey Flows (ICMP with optional TCP fallback).",
-    "nl": "Monitor apparaten en gebruik online/offline status in Homey Flows (ICMP met optionele TCP fallback)."
+    "en": "Monitor network devices and use their online or offline status in Homey Flows.",
+    "nl": "Monitor netwerkapparaten en gebruik hun online of offline status in Homey Flows."
   },
   "changelog": {
     "en": "Store page update: PNG icons are now black for better contrast.",
