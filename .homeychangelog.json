@@ -10,5 +10,9 @@
   "1.0.3": {
     "en": "Unified app/device/flow icons, improved autopublish workflow, and release pipeline fixes.",
     "nl": "Eenduidige app/apparaat/flow-iconen, verbeterde autopublish-workflow en fixes in de release-pipeline."
+  },
+  "1.0.4": {
+    "en": "Renamed app title to Homey Ping and refreshed app/device icon assets.",
+    "nl": "App-naam gewijzigd naar Homey Ping en app/apparaat-icoonbestanden vernieuwd."
   }
 }
