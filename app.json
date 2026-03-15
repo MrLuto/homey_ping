@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "com.byluto.homey_ping",
-  "version": "1.0.7",
+  "version": "1.1.0",
   "compatibility": ">=12.4.0",
   "sdk": 3,
   "runtime": "nodejs",
@@ -17,8 +17,8 @@
     "nl": "Monitor netwerkapparaten en gebruik hun online of offline status in Homey Flows."
   },
   "changelog": {
-    "en": "Added dedicated Flow card icons for improved App Store visibility.",
-    "nl": "Aparte Flow-kaarticonen toegevoegd voor betere zichtbaarheid in de App Store."
+    "en": "added autodiscovery",
+    "nl": "autodiscovery toegevoegd"
   },
   "category": [
     "tools"
@@ -137,7 +137,25 @@
       ],
       "pair": [
         {
-          "id": "manual_add"
+          "id": "manual_add",
+          "navigation": {
+            "next": "list_devices"
+          }
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "prev": "manual_add",
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices",
+          "navigation": {
+            "prev": "list_devices"
+          }
         }
       ],
       "settings": [

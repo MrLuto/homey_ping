@@ -1,7 +1,7 @@
 {
   "drivers": {
     "icmp_ping": {
-      "default_name": "Ping apparaat"
+      "default_name": "Apparaat"
     }
   },
   "errors": {
@@ -18,12 +18,27 @@
     "manual_add": {
       "title": "Pingdoel toevoegen",
       "name_label": "Apparaatnaam (optioneel)",
-      "name_placeholder": "Ping NAS",
+      "name_placeholder": "NAS",
       "host_label": "Host of IP",
       "host_placeholder": "192.168.1.10 of nas.local",
       "interval_label": "Ping-interval (seconden)",
       "timeout_label": "Ping-timeout (ms)",
-      "submit": "Apparaat toevoegen"
+      "submit": "Apparaat toevoegen",
+      "open_autodiscover": "Open autodiscover-lijst",
+      "autodiscover_not_available": "Autodiscover-weergave is niet beschikbaar."
+    },
+    "discovery": {
+      "title": "Apparaten automatisch ontdekken",
+      "description": "Scan je lokale netwerk en voeg gevonden apparaten toe.",
+      "scan": "Netwerk scannen",
+      "scanning": "Netwerk wordt gescand, even geduld...",
+      "scan_complete": "Scan voltooid.",
+      "scan_failed": "Netwerkscan mislukt.",
+      "no_results": "Geen apparaten gevonden.",
+      "add_device": "Gevonden apparaat toevoegen",
+      "already_added": "Al toegevoegd",
+      "device_added": "Apparaat toegevoegd.",
+      "mac_unknown": "MAC onbekend"
     }
   }
 }

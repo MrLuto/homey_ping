@@ -31,6 +31,7 @@
     </fieldset>
 
     <button type="submit" class="homey-button-primary-full" data-i18n="pair.manual_add.submit"></button>
+    <button id="open-discovery" type="button" class="homey-button-secondary-full" style="margin-top: .75rem;" data-i18n="pair.manual_add.open_autodiscover"></button>
   </form>
 
   <script type="text/javascript">
@@ -58,9 +59,19 @@
       const hostInput = document.getElementById('device-host');
       const intervalInput = document.getElementById('device-interval');
       const timeoutInput = document.getElementById('device-timeout');
+      const openDiscoveryButton = document.getElementById('open-discovery');
 
       hostInput.placeholder = Homey.__('pair.manual_add.host_placeholder');
       nameInput.placeholder = Homey.__('pair.manual_add.name_placeholder');
+
+      openDiscoveryButton.addEventListener('click', async function() {
+        if (typeof Homey.showView === 'function') {
+          await Homey.showView('list_devices');
+          return;
+        }
+
+        await Homey.alert(Homey.__('pair.manual_add.autodiscover_not_available'), 'error');
+      });
 
       form.addEventListener('submit', function(event) {
         event.preventDefault();

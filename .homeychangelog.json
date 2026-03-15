@@ -26,5 +26,9 @@
   "1.0.7": {
     "en": "Added dedicated Flow card icons so Flow icons are shown correctly in the App Store.",
     "nl": "Aparte Flow-kaarticonen toegevoegd zodat Flow-iconen correct zichtbaar zijn in de App Store."
+  },
+  "1.1.0": {
+    "en": "added autodiscovery",
+    "nl": "autodiscovery toegevoegd"
   }
 }

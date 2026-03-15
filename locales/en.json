@@ -1,7 +1,7 @@
 {
   "drivers": {
     "icmp_ping": {
-      "default_name": "Ping device"
+      "default_name": "Device"
     }
   },
   "errors": {
@@ -18,12 +18,27 @@
     "manual_add": {
       "title": "Add ping target",
       "name_label": "Device name (optional)",
-      "name_placeholder": "Ping NAS",
+      "name_placeholder": "NAS",
       "host_label": "Host or IP",
       "host_placeholder": "192.168.1.10 or nas.local",
       "interval_label": "Ping interval (seconds)",
       "timeout_label": "Ping timeout (ms)",
-      "submit": "Add device"
+      "submit": "Add device",
+      "open_autodiscover": "Open auto discover list",
+      "autodiscover_not_available": "Auto discover view is not available."
+    },
+    "discovery": {
+      "title": "Auto discover devices",
+      "description": "Scan your local network and add detected devices.",
+      "scan": "Scan network",
+      "scanning": "Scanning network, please wait...",
+      "scan_complete": "Scan complete.",
+      "scan_failed": "Network scan failed.",
+      "no_results": "No devices found.",
+      "add_device": "Add discovered device",
+      "already_added": "Already added",
+      "device_added": "Device added.",
+      "mac_unknown": "MAC unknown"
     }
   }
 }

@@ -16,7 +16,25 @@
   ],
   "pair": [
     {
-      "id": "manual_add"
+      "id": "manual_add",
+      "navigation": {
+        "next": "list_devices"
+      }
+    },
+    {
+      "id": "list_devices",
+      "template": "list_devices",
+      "navigation": {
+        "prev": "manual_add",
+        "next": "add_devices"
+      }
+    },
+    {
+      "id": "add_devices",
+      "template": "add_devices",
+      "navigation": {
+        "prev": "list_devices"
+      }
     }
   ],
   "settings": [
