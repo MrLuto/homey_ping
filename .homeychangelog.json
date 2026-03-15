@@ -18,5 +18,9 @@
   "1.0.5": {
     "en": "Store page refresh: PNG icon set changed from white to black while keeping SVG icons unchanged.",
     "nl": "Store-pagina ververst: PNG-icoonset gewijzigd van wit naar zwart, terwijl SVG-iconen ongewijzigd blijven."
+  },
+  "1.0.6": {
+    "en": "Improved App Store copy with clearer English and Dutch descriptions and feature overview.",
+    "nl": "App Store-tekst verbeterd met duidelijkere Engelse en Nederlandse beschrijvingen en functie-overzicht."
   }
 }

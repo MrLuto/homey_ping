@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "com.byluto.homey_ping",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "compatibility": ">=12.4.0",
   "sdk": 3,
   "runtime": "nodejs",
@@ -17,8 +17,8 @@
     "nl": "Monitor netwerkapparaten en gebruik hun online of offline status in Homey Flows."
   },
   "changelog": {
-    "en": "Store page update: PNG icons are now black for better contrast.",
-    "nl": "Store-pagina update: PNG-iconen zijn nu zwart voor beter contrast."
+    "en": "Store copy update: improved English and Dutch App Store descriptions.",
+    "nl": "Store-tekst update: verbeterde Engelse en Nederlandse App Store-beschrijvingen."
   },
   "category": [
     "tools"
