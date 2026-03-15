@@ -1,6 +1,6 @@
 {
   "id": "com.byluto.homey_ping",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "compatibility": ">=12.4.0",
   "sdk": 3,
   "runtime": "nodejs",
@@ -16,8 +16,8 @@
     "nl": "Monitor apparaten en gebruik online/offline status in Homey Flows (ICMP met optionele TCP fallback)."
   },
   "changelog": {
-    "en": "Updated app icon pack and renamed app title from Homey Ping Test to Homey Ping.",
-    "nl": "App-icoonset bijgewerkt en app-naam gewijzigd van Homey Ping Test naar Homey Ping."
+    "en": "Store page update: PNG icons are now black for better contrast.",
+    "nl": "Store-pagina update: PNG-iconen zijn nu zwart voor beter contrast."
   },
   "category": [
     "tools"

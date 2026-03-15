@@ -14,5 +14,9 @@
   "1.0.4": {
     "en": "Renamed app title to Homey Ping and refreshed app/device icon assets.",
     "nl": "App-naam gewijzigd naar Homey Ping en app/apparaat-icoonbestanden vernieuwd."
+  },
+  "1.0.5": {
+    "en": "Store page refresh: PNG icon set changed from white to black while keeping SVG icons unchanged.",
+    "nl": "Store-pagina ververst: PNG-icoonset gewijzigd van wit naar zwart, terwijl SVG-iconen ongewijzigd blijven."
   }
 }
