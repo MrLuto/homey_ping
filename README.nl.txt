@@ -1,23 +1,5 @@
-Homey Ping
+Monitor IP-adressen en hostnamen op je lokale netwerk en gebruik hun online of offline status in Homey Flows. Deze app is handig voor apparaten zoals NAS-systemen, printers, access points, mediaspelers en andere netwerkapparaten.
 
-Houd netwerkapparaten in de gaten met Homey Ping.
+Je kunt apparaten handmatig toevoegen en ze controleren met een instelbaar interval en timeout. De controlemodus kan worden ingesteld op Auto, alleen ICMP of alleen TCP. In Auto-modus wordt eerst ICMP geprobeerd en wordt teruggevallen op TCP als ICMP niet beschikbaar is.
 
-Met Homey Ping controleer je of een hostnaam of IP-adres online of offline is, en gebruik je die status in Homey Flows. Handig voor bijvoorbeeld NAS-systemen, printers, access points, mediaspelers en andere apparaten op je netwerk.
-
-Functies:
-- Voeg handmatig een hostnaam of IP-adres toe
-- Controleer bereikbaarheid met een instelbaar interval
-- Gebruik Auto-modus met ICMP en TCP fallback
-- Kies indien nodig voor alleen ICMP of alleen TCP
-- Duidelijke apparaatstatus: Online / Offline
-- Start handmatig een controle met Ping nu
-- Gebruik Flow-kaarten voor:
-  - Apparaat kwam online
-  - Apparaat ging offline
-  - Is online
-  - Is offline
-  - Ping nu
-
-Homey Ping is ontworpen om betrouwbaar te werken in verschillende Homey-omgevingen. Als ICMP niet beschikbaar is, kun je Auto of alleen TCP gebruiken.
-
-Hulp nodig met Homey Ping? Neem contact op met de ontwikkelaar voor ondersteuning, vragen of suggesties.
+Flow-kaarten zijn beschikbaar om te triggeren wanneer een apparaat online komt of offline gaat, om de huidige online of offline status te controleren en om handmatig een controle te starten met Ping nu.

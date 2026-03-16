@@ -1,4 +1,4 @@
-# Homey Ping
+# Ping Monitor
 
 Ping devices from Homey and use the online/offline status in Flows.
 
@@ -15,8 +15,8 @@ Because some Homey environments do not include a `ping` binary, the app supports
 - Manual probe via capability (`Ping nu` / `Ping now`).
 - Status capability with clear values: `Online` / `Offline`.
 - Flow cards for automation:
-  - Trigger: `Device came online`
-  - Trigger: `Device went offline`
+  - Trigger: `Came online`
+  - Trigger: `Went offline`
   - Condition: `Is online`
   - Condition: `Is offline`
   - Action: `Ping now`

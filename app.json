@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "com.byluto.homey_ping",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "compatibility": ">=12.4.0",
   "sdk": 3,
   "runtime": "nodejs",
@@ -9,16 +9,16 @@
     "local"
   ],
   "name": {
-    "en": "Homey Ping",
-    "nl": "Homey Ping"
+    "en": "Ping Monitor",
+    "nl": "Ping Monitor"
   },
   "description": {
-    "en": "Monitor network devices and use their online or offline status in Homey Flows.",
-    "nl": "Monitor netwerkapparaten en gebruik hun online of offline status in Homey Flows."
+    "en": "Track network device availability and automate actions when they go online or offline.",
+    "nl": "Volg de beschikbaarheid van netwerkapparaten en automatiseer acties als ze online of offline gaan."
   },
   "changelog": {
-    "en": "added autodiscovery",
-    "nl": "autodiscovery toegevoegd"
+    "en": "App Store guideline updates, improved visuals, and unique driver images.",
+    "nl": "App Store-guideline updates, verbeterde visuals en unieke driver-afbeeldingen."
   },
   "category": [
     "tools"
@@ -41,8 +41,8 @@
         "id": "became-online",
         "icon": "/assets/flow/ping.svg",
         "title": {
-          "en": "Device came online",
-          "nl": "Apparaat kwam online"
+          "en": "Came online",
+          "nl": "Kwam online"
         },
         "args": [
           {
@@ -56,8 +56,8 @@
         "id": "became-offline",
         "icon": "/assets/flow/ping.svg",
         "title": {
-          "en": "Device went offline",
-          "nl": "Apparaat ging offline"
+          "en": "Went offline",
+          "nl": "Ging offline"
         },
         "args": [
           {

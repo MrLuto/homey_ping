@@ -28,7 +28,11 @@
     "nl": "Aparte Flow-kaarticonen toegevoegd zodat Flow-iconen correct zichtbaar zijn in de App Store."
   },
   "1.1.0": {
-    "en": "added autodiscovery",
-    "nl": "autodiscovery toegevoegd"
+    "en": "Added auto-discovery.",
+    "nl": "Autodiscovery toegevoegd."
+  },
+  "1.1.1": {
+    "en": "App Store guideline updates, improved visuals, and unique driver images.",
+    "nl": "App Store-guideline updates, verbeterde visuals en unieke driver-afbeeldingen."
   }
 }

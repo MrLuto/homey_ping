@@ -4,16 +4,16 @@
       "id": "became-online",
       "icon": "/assets/flow/ping.svg",
       "title": {
-        "en": "Device came online",
-        "nl": "Apparaat kwam online"
+        "en": "Came online",
+        "nl": "Kwam online"
       }
     },
     {
       "id": "became-offline",
       "icon": "/assets/flow/ping.svg",
       "title": {
-        "en": "Device went offline",
-        "nl": "Apparaat ging offline"
+        "en": "Went offline",
+        "nl": "Ging offline"
       }
     }
   ],
