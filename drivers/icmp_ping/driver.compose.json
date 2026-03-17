@@ -95,11 +95,18 @@
         "nl": "Controlemodus"
       },
       "hint": {
-        "en": "AUTO tries ICMP first and falls back to TCP when ICMP is unavailable.",
-        "nl": "AUTO probeert eerst ICMP en valt terug op TCP als ICMP niet beschikbaar is."
+        "en": "Select probe mode. TCP only is the default.",
+        "nl": "Selecteer de controlemodus. Alleen TCP is standaard."
       },
-      "value": "auto",
+      "value": "tcp",
       "values": [
+        {
+          "id": "tcp",
+          "label": {
+            "en": "TCP only",
+            "nl": "Alleen TCP"
+          }
+        },
         {
           "id": "auto",
           "label": {
@@ -112,13 +119,6 @@
           "label": {
             "en": "ICMP only",
             "nl": "Alleen ICMP"
-          }
-        },
-        {
-          "id": "tcp",
-          "label": {
-            "en": "TCP only",
-            "nl": "Alleen TCP"
           }
         }
       ]

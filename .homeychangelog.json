@@ -12,8 +12,8 @@
     "nl": "Eenduidige app/apparaat/flow-iconen, verbeterde autopublish-workflow en fixes in de release-pipeline."
   },
   "1.0.4": {
-    "en": "Renamed app title to Homey Ping and refreshed app/device icon assets.",
-    "nl": "App-naam gewijzigd naar Homey Ping en app/apparaat-icoonbestanden vernieuwd."
+    "en": "Refreshed app/device icon assets.",
+    "nl": "App/apparaat-icoonbestanden vernieuwd."
   },
   "1.0.5": {
     "en": "Store page refresh: PNG icon set changed from white to black while keeping SVG icons unchanged.",
@@ -34,5 +34,9 @@
   "1.1.1": {
     "en": "App Store guideline updates, improved visuals, and unique driver images.",
     "nl": "App Store-guideline updates, verbeterde visuals en unieke driver-afbeeldingen."
+  },
+  "1.1.2": {
+    "en": "Set TCP as default probe mode, updated app ID, and refined metadata.",
+    "nl": "TCP als standaard controlemodus ingesteld, app-ID bijgewerkt en metadata verfijnd."
   }
 }

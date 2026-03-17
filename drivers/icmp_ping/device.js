@@ -372,12 +372,12 @@ module.exports = class IcmpPingDevice extends Homey.Device {
   }
 
   _getProbeMode() {
-    const mode = String(this.getSettings().probe_mode || 'auto').toLowerCase();
+    const mode = String(this.getSettings().probe_mode || 'tcp').toLowerCase();
     if (mode === 'icmp' || mode === 'tcp') {
       return mode;
     }
 
-    return 'auto';
+    return 'tcp';
   }
 
 };

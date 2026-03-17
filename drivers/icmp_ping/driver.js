@@ -472,7 +472,7 @@ module.exports = class IcmpPingDriver extends Homey.Driver {
           host,
           interval: DEFAULT_INTERVAL,
           timeout: DEFAULT_TIMEOUT,
-          probe_mode: 'auto',
+          probe_mode: 'tcp',
           tcp_port: DEFAULT_TCP_PORT,
         },
       },

@@ -7,7 +7,7 @@
   "errors": {
     "no_host": "No host configured",
     "ping_failed": "Ping command failed",
-    "no_reply": "No ICMP reply received",
+    "no_reply": "No response received",
     "unknown_error": "Unknown error"
   },
   "pair": {

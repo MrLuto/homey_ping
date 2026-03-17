@@ -1,6 +1,6 @@
 {
-  "id": "com.byluto.homey_ping",
-  "version": "1.1.1",
+  "id": "com.byluto.pingmonitor",
+  "version": "1.1.2",
   "compatibility": ">=12.4.0",
   "sdk": 3,
   "runtime": "nodejs",
@@ -16,8 +16,8 @@
     "nl": "Volg de beschikbaarheid van netwerkapparaten en automatiseer acties als ze online of offline gaan."
   },
   "changelog": {
-    "en": "App Store guideline updates, improved visuals, and unique driver images.",
-    "nl": "App Store-guideline updates, verbeterde visuals en unieke driver-afbeeldingen."
+    "en": "Set TCP as default probe mode, updated app ID, and refined metadata.",
+    "nl": "TCP als standaard controlemodus ingesteld, app-ID bijgewerkt en metadata verfijnd."
   },
   "category": [
     "tools"
